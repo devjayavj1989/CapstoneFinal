@@ -45,7 +45,7 @@ def run(argv=None):
             required=False,
             default='cust_tier_code-sku-total_no_of_product',
             help=('Input BigQuery table to process specified as: '
-                'TABLE fpr product'))
+                'TABLE for product'))
         parser.add_argument(
             '--TableSales',
             required=False,
@@ -60,7 +60,7 @@ def run(argv=None):
                 on p.CUSTOMER_ID=c.CUSTOMER_ID 
                 group by c.CUST_TIER_CODE,p.SKU""",
             help=('Input BigQuery table to process specified as: '
-                  'TABLE for sales'))
+                  'TABLE for product'))
         parser.add_argument(
             '--queryOrder',
             required=False,
